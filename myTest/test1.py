@@ -66,7 +66,7 @@ r = results[0]
 display.display_instances(image, r['rois'], r['masks'], r['class_ids'],class_names, r['scores'],name="test",show_bbox=False)
 
 '''
-MY_IMAGE_DIR = os.path.abspath('/home/zbf/zhaozhao/data/1/rgb/')
+MY_IMAGE_DIR = os.path.abspath('/home/zbf/zhaozhao/data/6/rgb/')
 # print(MY_IMAGE_DIR)
 # for i,f in enumerate(os.listdir(MY_IMAGE_DIR)):
 
@@ -78,6 +78,6 @@ for f in os.listdir(MY_IMAGE_DIR):
     # sio.savemat('savedata{}.mat'.format(f), {'rois': r['rois'], 'masks': r['masks'], 'class_ids': r['class_ids'],
                                  # 'class_names': class_names, 'scores': r['scores'], })
 # # visualize.display_instances(images[0], r['rois'], r['masks'], r['class_ids'],class_names, r['scores'])
-    display.display_instances(image, r['rois'], r['masks'], r['class_ids'],class_names, r['scores'],name=f)
+    display.display_instances(image, r['rois'], r['masks'], r['class_ids'],class_names, r['scores'],name=f,show_bbox=True)
 
 # print(0)

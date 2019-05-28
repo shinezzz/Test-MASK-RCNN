@@ -28,7 +28,7 @@ def random_colors(N, bright=True):
     colors = list(map(lambda c: colorsys.hsv_to_rgb(*c), hsv))
     # random.shuffle(colors)
     return colors
-def apply_mask(image, mask, color, alpha=0.95):
+def apply_mask(image, mask, color, alpha=0.5):
     """Apply the given mask to the image.
     """
     for c in range(3):
@@ -134,6 +134,6 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     ax.imshow(masked_image.astype(np.uint8))
     # SAVE_IMAGE_DIR = os.path.abspath('/home/zbf/zhaozhao/')
     if auto_show:
-        plt.savefig('/home/zbf/zhaozhao/data/1/rgb_mask/{}'.format(name))
+        plt.savefig('/home/zbf/zhaozhao/data/6/rgb_mask_box_5/{}'.format(name))
         # plt.savefig('/home/zbf/zhaozhao/data/3.png')
         # plt.show()

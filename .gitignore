@@ -56,3 +56,5 @@ pip-delete-this-directory.txt
 .venv
 venv/
 ENV/
+mask_rcnn_balloon.h5
+mask_rcnn_coco.h5
